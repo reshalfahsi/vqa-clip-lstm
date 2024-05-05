@@ -14,7 +14,7 @@
 </div>
 
 
-The visual question-answering problem can be described as "asking our computer to reply to the assigned questions about a particular image." In this project, a CLIP + LSTM architecture comes to lend a helping hand, trying to solve the problem. The image and text encoders of CLIP cultivate the given image and question, respectively. The concatenated image-text representation from CLIP is then applied to the vectorized answer text via the Hadamard product before feeding it to LSTM. By a fashion of autoregressive, the answer to the question is finally served to us. Here, the VizWiz-VQA dataset is utilized to train, validate, and test the model. The training set of the dataset is used in the training and validation phases. It is divided by a ratio of 99:1. The validation set of the dataset is employed for testing. The SQuAD metric is utilized to gauge the performance of the model quantitatively. In inference time, the test set of VizWiz-VQA is leveraged.
+The visual question-answering problem can be described as "asking our computer to reply to the assigned questions about a particular image." In this project, a CLIP + LSTM architecture comes to lend a helping hand, trying to solve the problem. The image and text encoders of CLIP cultivate the given image and question, respectively. The concatenated image-text representation from CLIP is then applied to the vectorized answer text via the Hadamard product before feeding it to LSTM. By a fashion of autoregressive, the answer to the question is finally served to us. Here, the VizWiz-VQA dataset is utilized to train, validate, and test the model. The training set of the dataset is used in the training and validation phases. It is divided by a ratio of 99:1. The validation set of the dataset is employed for testing. The SQuAD and BLEU metrics are utilized to gauge the performance of the model quantitatively. In inference time, the test set of VizWiz-VQA is leveraged.
 
 
 ## Experiment
@@ -26,10 +26,11 @@ Give yourself a delightful excursion by passing through the line of codes regard
 
 ## Quantitative Result
 
-Here are the SQuAD metric results of the model.
+Here are the evaluation metric results of the model.
 
 SQuAD Metric                   | Score
 ------------------------------ | -------------
+BLEU 1-gram                    | 44.67%
 Exact Match                    | 44.32%
 F1-score                       | 44.63%
 
@@ -53,6 +54,7 @@ The following image exhibits the collated results of the VQA model.
 - [Less Is More: Linear Layers on CLIP Features as Powerful VizWiz Model](https://arxiv.org/pdf/2206.05281.pdf)
 - [Long Short-Term Memory](https://www.bioinf.jku.at/publications/older/2604.pdf)
 - [SQuAD: 100,000+ Questions for Machine Comprehension of Text](https://arxiv.org/pdf/1606.05250.pdf)
+- [A Call for Clarity in Reporting BLEU Scores](https://arxiv.org/pdf/1804.08771)
 - [CLIP](https://github.com/openai/CLIP)
 - [yousefkotp's Visual Question Answering](https://github.com/yousefkotp/Visual-Question-Answering)
 - [aladdinpersson's Image Captioning](https://github.com/aladdinpersson/Machine-Learning-Collection/tree/master/ML/Pytorch/more_advanced/image_captioning)
