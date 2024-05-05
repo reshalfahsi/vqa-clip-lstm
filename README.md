@@ -31,8 +31,8 @@ Here are the evaluation metric results of the model.
 SQuAD Metric                   | Score
 ------------------------------ | -------------
 BLEU 1-gram                    | 44.67%
-Exact Match                    | 44.32%
-F1-score                       | 44.63%
+Exact Match                    | 44.43%
+F1-score                       | 44.83%
 
 
 ## Loss Curve
