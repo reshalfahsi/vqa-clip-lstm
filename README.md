@@ -56,6 +56,7 @@ The following image exhibits the collated results of the VQA model.
 - [SQuAD: 100,000+ Questions for Machine Comprehension of Text](https://arxiv.org/pdf/1606.05250.pdf)
 - [A Call for Clarity in Reporting BLEU Scores](https://arxiv.org/pdf/1804.08771)
 - [CLIP](https://github.com/openai/CLIP)
+- [LLaMA 2 from scratch 🦙](https://github.com/viai957/llama-inference)
 - [yousefkotp's Visual Question Answering](https://github.com/yousefkotp/Visual-Question-Answering)
 - [aladdinpersson's Image Captioning](https://github.com/aladdinpersson/Machine-Learning-Collection/tree/master/ML/Pytorch/more_advanced/image_captioning)
 - [VizWiz-VQA](https://vizwiz.org/tasks-and-datasets/vqa/)
